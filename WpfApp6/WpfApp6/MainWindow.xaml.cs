@@ -47,6 +47,7 @@ namespace WpfApp6
                     UpdateTasksList();
                 }
             }
+
         }
 
         private void DeleteTaskButton_Click(object sender, RoutedEventArgs e)
