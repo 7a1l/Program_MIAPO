@@ -41,6 +41,7 @@ namespace WpfApp6
                 EditTaskButton.IsEnabled = false;
                 DeleteTaskButton.IsEnabled = false;
                 ViewTaskButton.IsEnabled = false;
+
             }
             TasksListBox.Items.Clear();
             foreach (var task in tasks)
