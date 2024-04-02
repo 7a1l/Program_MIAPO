@@ -52,10 +52,11 @@ namespace WpfApp6
         {
             var filteredTasks = tasks.Where(task => task.Name.Contains(SearchTextBox.Text) || task.Description.Contains(SearchTextBox.Text));
             TasksListBox.Items.Clear();
-            foreach (var task in filteredTasks)
+            foreach (var task1 in filteredTasks)
             {
-                TasksListBox.Items.Add(task);
+                TasksListBox.Items.Add(task1);
             }
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
