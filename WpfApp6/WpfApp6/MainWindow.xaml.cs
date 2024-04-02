@@ -50,7 +50,12 @@ namespace WpfApp6
 
         private void SearchTaskButton_Click(object sender, RoutedEventArgs e)
         {
-           
+            var filteredTasks = tasks.Where(task => task.Name.Contains(SearchTextBox.Text) || task.Description.Contains(SearchTextBox.Text));
+            TasksListBox.Items.Clear();
+            foreach (var task in filteredTasks)
+            {
+                TasksListBox.Items.Add(task);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
