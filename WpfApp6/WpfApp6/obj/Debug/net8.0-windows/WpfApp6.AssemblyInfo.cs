@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WpfApp6")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4993f933d7cc5aa4a784bf95f9e3261b17da7e96")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8686f8e8d1cba0a0821a7009836bd288f08bab04")]
->>>>>>> third_function
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ba09d0d164e1ff4e97aedc134909f656c058bb5")]
 [assembly: System.Reflection.AssemblyProductAttribute("WpfApp6")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WpfApp6")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
