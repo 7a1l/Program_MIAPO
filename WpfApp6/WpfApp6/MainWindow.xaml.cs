@@ -26,7 +26,14 @@ namespace WpfApp6
         }
         private void AddTaskButton_Click(object sender, RoutedEventArgs e)
         {
-           
+            var addTaskWindow = new AddTaskWindow();
+            if (addTaskWindow.ShowDialog() == true)
+            {
+                var task = new Task(addTaskWindow.TaskNameTextBox.Text, addTaskWindow.TaskDescriptionTextBox.Text);
+                tasks.Add(task);
+
+                UpdateTasksList();
+            }
         }
 
         public void UpdateTasksList()
