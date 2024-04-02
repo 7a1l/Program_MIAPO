@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\WpfApp6\\WpfApp6\\WpfApp6.csproj",
+      "projectUniqueName": "X:\\Program_MIAPO\\WpfApp6\\WpfApp6\\WpfApp6.csproj",
       "projectName": "WpfApp6",
-      "projectPath": "X:\\WpfApp6\\WpfApp6\\WpfApp6.csproj",
+      "projectPath": "X:\\Program_MIAPO\\WpfApp6\\WpfApp6\\WpfApp6.csproj",
       "packagesPath": "C:\\Users\\fortn\\.nuget\\packages\\",
-      "outputPath": "X:\\WpfApp6\\WpfApp6\\obj\\",
+      "outputPath": "X:\\Program_MIAPO\\WpfApp6\\WpfApp6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
