@@ -35,18 +35,7 @@ namespace WpfApp6
 
         private void EditTaskButton_Click(object sender, RoutedEventArgs e)
         {
-            var selectedTask = TasksListBox.SelectedItem as Task;
-
-            if (selectedTask != null)
-            {
-                var editTaskWindow = new EditTaskWindow(selectedTask);
-                if (editTaskWindow.ShowDialog() == true)
-                {
-                    selectedTask.Name = editTaskWindow.TaskNameTextBox.Text;
-                    selectedTask.Description = editTaskWindow.TaskDescriptionTextBox.Text;
-                    UpdateTasksList();
-                }
-            }
+           
         }
 
         private void DeleteTaskButton_Click(object sender, RoutedEventArgs e)
