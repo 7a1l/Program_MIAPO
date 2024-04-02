@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfApp6
 {
-    class Task
+  public  class Task
     {
         private string _name;
         private string _description;
