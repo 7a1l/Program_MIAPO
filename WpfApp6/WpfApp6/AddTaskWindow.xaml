@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp6.AddTaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="AddTaskWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Название задачи:" Grid.Column="0" Grid.Row="0" Margin="10"/>
+        <TextBox x:Name="TaskNameTextBox" Grid.Column="1" Margin="10"/>
+
+        <Label Content="Описание задачи:" Grid.Column="0" Grid.Row="1" Margin="10"/>
+        <TextBox x:Name="TaskDescriptionTextBox" Grid.Column="1" Grid.Row="1" Margin="10" TextWrapping="Wrap"/>
+
+        <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10">
+            <Button x:Name="AddButton" Content="Добавить" Click="AddButton_Click" Height="50" Width="60" Margin="0 0 10 0" />
+            <Button x:Name="CancelButton" Content="Отмена" Click="CancelButton_Click" Height="50" Width="60" Margin="10 0 0 0"/>
+        </StackPanel>
+    </Grid>
+</Window>
