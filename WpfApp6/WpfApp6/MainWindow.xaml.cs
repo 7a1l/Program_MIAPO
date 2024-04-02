@@ -26,27 +26,18 @@ namespace WpfApp6
         }
         private void AddTaskButton_Click(object sender, RoutedEventArgs e)
         {
+            var addTaskWindow = new AddTaskWindow();
+            if (addTaskWindow.ShowDialog() == true)
+            {
+                var task = new Task(addTaskWindow.TaskNameTextBox.Text, addTaskWindow.TaskDescriptionTextBox.Text);
+                tasks.Add(task);
+
+                UpdateTasksList();
+            }
         }
 
         public void UpdateTasksList()
         {
-            if (tasks.Count > 0)
-            {
-                EditTaskButton.IsEnabled = true;
-                DeleteTaskButton.IsEnabled = true;
-                ViewTaskButton.IsEnabled = true;
-            }
-            else
-            {
-                EditTaskButton.IsEnabled = false;
-                DeleteTaskButton.IsEnabled = false;
-                ViewTaskButton.IsEnabled = false;
-            }
-            TasksListBox.Items.Clear();
-            foreach (var task in tasks)
-            {
-                TasksListBox.Items.Add(task);
-            }
         }
 
         private void EditTaskButton_Click(object sender, RoutedEventArgs e)
