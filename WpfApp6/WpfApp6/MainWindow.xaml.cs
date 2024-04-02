@@ -76,12 +76,22 @@ namespace WpfApp6
 
         private void DeleteTaskButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            var selectedTask = TasksListBox.SelectedItem as Task;
+            if (selectedTask != null)
+            {
+                tasks.Remove(selectedTask);
+                UpdateTasksList();
+            }
         }
 
         private void ViewTaskButton_Click(object sender, RoutedEventArgs e)
         {
-           
+            var selectedTask = TasksListBox.SelectedItem as Task;
+            if (selectedTask != null)
+            {
+                var viewTaskWindow = new ViewTaskWindow(selectedTask);
+                viewTaskWindow.ShowDialog();
+            }
         }
 
         private void SearchTaskButton_Click(object sender, RoutedEventArgs e)
