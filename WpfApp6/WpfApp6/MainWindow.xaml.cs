@@ -31,8 +31,6 @@ namespace WpfApp6
 
         public void UpdateTasksList()
         {
-<<<<<<< HEAD
-=======
             if (tasks.Count > 0)
             {
                 EditTaskButton.IsEnabled = true;
@@ -51,7 +49,6 @@ namespace WpfApp6
             {
                 TasksListBox.Items.Add(task);
             }
->>>>>>> first_function
         }
 
         private void EditTaskButton_Click(object sender, RoutedEventArgs e)
