@@ -31,6 +31,27 @@ namespace WpfApp6
 
         public void UpdateTasksList()
         {
+<<<<<<< HEAD
+=======
+            if (tasks.Count > 0)
+            {
+                EditTaskButton.IsEnabled = true;
+                DeleteTaskButton.IsEnabled = true;
+                ViewTaskButton.IsEnabled = true;
+            }
+            else
+            {
+                EditTaskButton.IsEnabled = false;
+                DeleteTaskButton.IsEnabled = false;
+                ViewTaskButton.IsEnabled = false;
+
+            }
+            TasksListBox.Items.Clear();
+            foreach (var task in tasks)
+            {
+                TasksListBox.Items.Add(task);
+            }
+>>>>>>> first_function
         }
 
         private void EditTaskButton_Click(object sender, RoutedEventArgs e)
